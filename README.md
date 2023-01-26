@@ -1,11 +1,12 @@
 # led-control
 
-Firmware for the ESP32 as an input-receiver module on a Eurorack system. The ESP is mounted onto a 10hp rack module that accompanies 
-. 3 gate inputs, 
-. 3 CV inputs, 
-. stereo audio (or two separate audio signals)
+Firmware for the ESP32 as an input-receiver module on a Eurorack system. The ESP is mounted onto a 10-12hp rack module that accompanies: 
+- 3 gate inputs
+- 3 CV inputs
+- stereo audio (or two separate audio signals)
+- USB (for loading image/gif files)
+- Program selection for the led_control
 
-
-
-The ESP32 sends the inputs as serial data through the USB port. This serial data can be sent into the usb port of a computer or SBC to run programs based on inputs. 
+The input_receive module sends these inputs as serial data to led_control via either a wired serial connection or wireless bluetooth. 
+This data is then used to generate animations on the LED screen. 
 
